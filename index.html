@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="col-md-5 border border-secondary rounded-lg my-5 mt-6 ">
+            <form>
+                <fieldset>
+                <legend class="text-white">Form</legend>
+                <h2 class="text-secondary font-weight-bold">Formulario</h2>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input required type="text" class="form-control" id="name" aria-describedby="nameHelp" />
+                    <small id="nameHelp" class="form-text text-muted">Escriba el nombre</small>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="lastname">Apellido</label>
+                    <input required type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp" />
+                    <small id="lastHelp" class="form-text text-muted">Escriba el Apellido</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input required type="number" class="form-control" id="edad" aria-describedby="edadHelp" />
+                    <small id="edadHelp" class="form-text text-muted">Escriba la edad</small>
+                </div>
+
+                <div class="form-group">
+                    <label class="sr-only" for="email">email</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input required type="email" class="form-control" id="email"placeholder="email">
+                    </div>
+                    <small id="emailHelp" class="form-text text-muted">Escriba el correo electronico</small>
+                </div>
+
+                <button type="button" class="btn btn-dark" onclick="alertas()">Registrar</button>
+                </fieldset>
+            </form>
+            <br>
+
+        </div>
+    </div>
+    <script src="./Js/Formulario.js"></script>
+</body>
+
+</html>
